@@ -3,7 +3,7 @@ import turtle
 t = turtle.Turtle()
 t.speed(5)
 
-# -------- FIGURER --------
+#FIGURER
 def kvadrat(storlek, färg):
     t.color(färg)
     t.begin_fill()
@@ -26,14 +26,14 @@ def cirkel(radie, färg):
     t.circle(radie)
     t.end_fill()
 
-# -------- BLOMMA --------
+#BLOMMA 
 def blomma(storlek, antal, färg):
     t.color(färg)
     for _ in range(antal):
         kvadrat(storlek, färg)
         t.right(360 / antal)
 
-# -------- MENY --------
+#MENY
 def meny():
     print("\n--- MENY ---")
     print("1. Rita kvadrat")
@@ -42,7 +42,7 @@ def meny():
     print("4. Rita blomma")
     print("5. Avsluta")
 
-# -------- HUVUDPROGRAM --------
+#HUVUDPROGRAM
 val = 0
 
 while val != "5":
